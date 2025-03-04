@@ -24,10 +24,6 @@ const technologies = [
           pipelines and scalable architectures.
         </p>
         <div class="flex flex-wrap justify-center gap-4 mb-12">
-          <a href="#contact"
-            class="bg-primary-600 text-white px-8 py-3 rounded-full hover:bg-primary-700 transition-colors">
-            Get in Touch
-          </a>
           <!-- Project Experience Link -->
           <router-link to="/project-experience"
             class="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-full hover:bg-primary-50 transition-colors">
