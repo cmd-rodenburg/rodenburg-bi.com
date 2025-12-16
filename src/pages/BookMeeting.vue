@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MeetMeSection from '../components/Sections/MeetMeSection.vue';
+import MeetMeSection from '../components/Sections/Contact/MeetMeSection.vue';
 import NavigationBar from '../components/Layout/NavigationBar.vue'
 import Header from '../components/Layout/Header.vue';
 </script>

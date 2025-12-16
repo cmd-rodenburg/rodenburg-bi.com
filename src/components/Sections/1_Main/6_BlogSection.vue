@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const projects = [
+const blogs = [
   {
     title: 'Optimize Your Data Platform: The “To-do’s”',
     summary: 'Read about my tips for optimizing your Data Platform',
@@ -16,12 +16,11 @@ const projects = [
 </script>
 
 <template>
-  <section id="projects" class="pt-20 pb-20 bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800 py-10">
+  <section id="blog" class="pt-20 pb-20 bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="section-title" >Blog posts</h2>
-      <p class="text-white"> More to come</p>
       <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-        <div v-for="(project, index) in projects" :key="index" class="card p-8">
+        <div v-for="(project, index) in blogs" :key="index" class="card p-8">
           <h3 class="text-2xl font-semibold mb-3">{{ project.title }}</h3>
           <a :href="project.blog_link" target="_blank">
             <img v-if="project.image" :src="project.image" :alt="project.title" class="w-full h-70 object-cover rounded-lg mb-4" />

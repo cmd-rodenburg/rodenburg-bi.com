@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import NavigationBar from '../components/Layout/NavigationBar.vue';
 // import DomainExamples from '../components/Sections/Business/DomainExamples.vue'
-import Blog from '../components/Sections/Main/BlogSection.vue';
-import Services from '../components/Sections/Business/ServicesSection.vue';
+import Blog from '../components/Sections/1_Main/6_BlogSection.vue';
+import Services from '../components/Sections/1_Main/4_ServicesSection.vue';
 
 </script>
 

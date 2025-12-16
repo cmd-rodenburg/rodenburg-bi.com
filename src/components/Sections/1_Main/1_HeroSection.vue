@@ -25,9 +25,9 @@ const technologies = [
         </p>
         <div class="flex flex-wrap justify-center gap-4 mb-12">
           <!-- Project Experience Link -->
-          <router-link to="/project-experience"
+          <router-link to="/meet-Anne"
             class="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-full hover:bg-primary-50 transition-colors">
-              View Project experience
+              Schedule a meeting
           </router-link>
         </div>
         <div class="flex flex-wrap justify-center gap-4">

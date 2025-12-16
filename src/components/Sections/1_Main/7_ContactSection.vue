@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ContactForm from '../forms/ContactForm.vue';
-import BaseButton from '../CommonElements/Button.vue';
+import ContactForm from '../../forms/ContactForm.vue';
+import BaseButton from '../../CommonElements/Button.vue';
 </script>
 
 <template>

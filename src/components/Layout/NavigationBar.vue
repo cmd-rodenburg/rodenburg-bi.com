@@ -75,21 +75,25 @@ if (typeof window !== 'undefined') {
                 <div class="py-1">
                   <button @click="navigateAndScroll('about')"
                     class="block w-full text-left px-4 py-2 text-sm text-moss-200 hover:bg-moss-900">About</button>
+                  <button @click="navigateAndScroll('projects')"
+                    class="block w-full text-left px-4 py-2 text-sm text-moss-200 hover:bg-moss-900">Projects</button>
+                  <button @click="navigateAndScroll('services')"
+                    class="block w-full text-left px-4 py-2 text-sm text-moss-200 hover:bg-moss-900">Services</button>
                   <button @click="navigateAndScroll('skills')"
                     class="block w-full text-left px-4 py-2 text-sm text-moss-200 hover:bg-moss-900">Skills</button>
-                  <!-- <button @click="navigateAndScroll('projects')"
-                    class="block w-full text-left px-4 py-2 text-sm text-moss-200 hover:bg-moss-900">Projects</button> -->
+                  <button @click="navigateAndScroll('blog')"
+                    class="block w-full text-left px-4 py-2 text-sm text-moss-200 hover:bg-moss-900">Blog</button>
                   <button @click="navigateAndScroll('contact')"
                     class="block w-full text-left px-4 py-2 text-sm text-moss-200 hover:bg-moss-900">Contact</button>
                 </div>
               </div>
             </div>
 
-            <!-- Business Solution Link -->
+            <!-- Business Solution Link
             <router-link to="/project-experience"
               class="text-moss-200 hover:text-moss-100 px-3 py-2 rounded-md text-sm font-medium">
               Project experience
-            </router-link>
+            </router-link> -->
 
             <!-- Test page link  -->
             <!-- <router-link to="/test-page"

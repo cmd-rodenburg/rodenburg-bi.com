@@ -7,21 +7,17 @@
         <div class="md:grid md:grid-cols-[2fr_1fr] md:gap-12">
           <div>
             <p class="text-xl text-emerald-500 font-semibold mb-8">
-              Freelance data engineer with a knack for business intelligence
+              Freelance data engineer with a knack for business intelligence              
             </p>
             <div class="space-y-6 order-last md:order-none">
               <p class="text-justify text-gray-300 leading-relaxed">
-                With a master’s degree in Molecular Medicine, I apply strong analytical skills in the Data Engineering
-                field. I love tackling issues at the core, finding efficient solutions to complex problems.
+              I help organizations turn scattered, unreliable data into clear, decision-ready insight. As a senior data engineer and business intelligence specialist, I design data platforms that give teams control, speed, and confidence in their numbers.
               </p>
               <p class="text-justify text-gray-300 leading-relaxed">
-                Working for large companies such as Accenture, Cargill, Transavia, and Capgemini I gained valuable
-                experience in both Dutch and German markets across multiple domains and industries.
+              I have delivered high-impact data solutions for international organizations including Accenture, Cargill, Transavia, and Capgemini, working across the Dutch and German markets. My strength lies in quickly understanding complex business environments and translating them into scalable, maintainable data architectures.
               </p>
               <p class="text-justify text-gray-300 leading-relaxed">
-                During my journey as a freelancer, I strive to integrate your data into one centralized data platform
-                and implement Data as a Service (DaaS) to empower your business. From data to dashboards, I’ll provide
-                you with the insights you need to excel.
+              For nearly a year as an independent freelancer, I have helped companies centralize their data, streamline data pipelines, and build dashboards that actually get used. I implement Data as a Service (DaaS) so data becomes a reliable product, not a bottleneck. From ingestion to insight, I focus on outcomes: faster decisions, less manual work, and a data foundation that supports growth.
               </p>
             </div>
           </div>
@@ -42,7 +38,7 @@
                   <p class="text-gray-400 text-sm">Countries</p>
                 </div>
                 <div class="bg-gray-700/50 rounded-lg p-4 text-center">
-                  <h3 class="text-xl font-semibold mb-1">6</h3>
+                  <h3 class="text-xl font-semibold mb-1">10</h3>
                   <router-link to="/project-experience" class="text-gray-400 text-sm">Projects </router-link>
                 </div>
                 <div class="bg-gray-700/50 rounded-lg p-4 text-center">

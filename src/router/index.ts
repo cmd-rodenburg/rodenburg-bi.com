@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { usePostHog } from '../composables/usePostHog'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -12,16 +11,16 @@ const router = createRouter({
         title: 'Home'
       }
     },
-    {
-      path: '/project-experience',
-      name: 'ProjectExperience',
-      component: () => import('../pages/ProjectExperience.vue')
-    },
-    {
-      path: '/test-page',
-      name: 'TestPage',
-      component: () => import('../pages/_testpage.vue')
-    },
+    // {
+    //   path: '/project-experience',
+    //   name: 'ProjectExperience',
+    //   component: () => import('../pages/ProjectExperience.vue')
+    // },
+    // {
+    //   path: '/test-page',
+    //   name: 'TestPage',
+    //   component: () => import('../pages/_testpage.vue')
+    // },
     {
       path: '/meet-Anne',
       name: 'MeetAnne',
@@ -29,15 +28,5 @@ const router = createRouter({
     }
   ]
 })
-
-
-// SETUP to log page views/event in Posthog
-const { posthog } = usePostHog()
-
-if (posthog) {
-  router.beforeEach((to) => {
-    posthog.capture('$pageview', { path: to.fullPath })
-  })
-}
 
 export default router
