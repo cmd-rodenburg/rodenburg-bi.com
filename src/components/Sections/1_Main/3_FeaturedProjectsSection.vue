@@ -60,8 +60,8 @@ const projects = [
             {{ project.description }}
           </p>
           <p class="text-gray-300 mb-4" v-html="project.subdescription"></p>
-          <img v-if="project.image" :src="project.image" :alt="project.title"
-            class="w-full h-70 object-cover rounded-lg mb-4" />
+          <!-- <img v-if="project.image" :src="project.image" :alt="project.title"
+            class="w-full h-70 object-cover rounded-lg mb-4" /> -->
           <div class="flex flex-wrap gap-3 mb-5">
             <a v-for="tech in project.technologies" :key="tech" href="#skills"
               class="bg-gray-700 rounded-lg px-4 py-2 text-sm">
