@@ -1,3 +1,12 @@
+<script setup lang="ts">
+const stats = [
+  { metric: '97%', label: 'Pipeline time reduction' },
+  { metric: '85%', label: 'API ingestion time saved' },
+  { metric: '35%', label: 'Daily ingestion reduction' },
+  { metric: '1st / 268', label: 'iGEM international rank' },
+]
+</script>
+
 <template>
   <section id="about" class="py-20 bg-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -6,18 +15,21 @@
       <div class="container mx-auto px-4">
         <div class="md:grid md:grid-cols-[2fr_1fr] md:gap-12">
           <div>
-            <p class="text-xl text-emerald-500 font-semibold mb-8">
-              Freelance data engineer with a knack for business intelligence              
+            <p class="text-xl text-moss-500 font-semibold mb-8">
+              Freelance data engineer with a knack for business intelligence
             </p>
-            <div class="space-y-6 order-last md:order-none">
+            <div class="space-y-6">
               <p class="text-justify text-gray-300 leading-relaxed">
-              I help organizations turn scattered, unreliable data into clear, decision-ready insight. As a senior data engineer and business intelligence specialist, I design data platforms that give teams control, speed, and confidence in their numbers.
+                I help organizations turn scattered, unreliable data into clear, decision-ready insight. As a senior data engineer and business intelligence specialist, I design data platforms that give teams control, speed, and confidence in their numbers.
               </p>
               <p class="text-justify text-gray-300 leading-relaxed">
-              I have delivered high-impact data solutions for international organizations including Accenture, Cargill, Transavia, and Capgemini, working across the Dutch and German markets. My strength lies in quickly understanding complex business environments and translating them into scalable, maintainable data architectures.
+                I have delivered high-impact data solutions for international organizations including Accenture, Cargill, Transavia, and Capgemini, working across the Dutch and German markets. My strength lies in quickly understanding complex business environments and translating them into scalable, maintainable data architectures.
               </p>
               <p class="text-justify text-gray-300 leading-relaxed">
-              For nearly a year as an independent freelancer, I have helped companies centralize their data, streamline data pipelines, and build dashboards that actually get used. I implement Data as a Service (DaaS) so data becomes a reliable product, not a bottleneck. From ingestion to insight, I focus on outcomes: faster decisions, less manual work, and a data foundation that supports growth.
+                For nearly a year as an independent freelancer, I have helped companies centralize their data, streamline data pipelines, and build dashboards that actually get used. I implement Data as a Service (DaaS) so data becomes a reliable product, not a bottleneck. From ingestion to insight, I focus on outcomes: faster decisions, less manual work, and a data foundation that supports growth.
+              </p>
+              <p class="text-justify text-gray-300 leading-relaxed">
+                My background is in molecular medicine — where bad data costs lives. I won first place in an international synthetic biology competition (iGEM, 1st of 268 teams). That standard of rigor carries into every pipeline and model I build.
               </p>
             </div>
           </div>
@@ -25,25 +37,20 @@
           <div class="mt-8 md:mt-0">
             <div class="flex flex-col items-center">
               <div class="w-full max-w-[250px] mb-8">
-                <img src="/images/AnneRodenburg.jpg" alt="Profile picture"
-                  class="rounded-full w-full aspect-square object-cover shadow-lg" />
+                <img
+                  src="/images/AnneRodenburg.jpg"
+                  alt="Profile picture"
+                  class="rounded-full w-full aspect-square object-cover shadow-lg"
+                />
               </div>
               <div class="w-full grid grid-cols-2 gap-4">
-                <div class="bg-gray-700/50 rounded-lg p-4 text-center">
-                  <h3 class="text-xl font-semibold mb-1">6+ years</h3>
-                  <p class="text-gray-400 text-sm">Experience</p>
-                </div>
-                <div class="bg-gray-700/50 rounded-lg p-4 text-center">
-                  <h3 class="text-xl font-semibold mb-1">5</h3>
-                  <p class="text-gray-400 text-sm">Countries</p>
-                </div>
-                <div class="bg-gray-700/50 rounded-lg p-4 text-center">
-                  <h3 class="text-xl font-semibold mb-1">10</h3>
-                  <router-link to="/project-experience" class="text-gray-400 text-sm">Projects </router-link>
-                </div>
-                <div class="bg-gray-700/50 rounded-lg p-4 text-center">
-                  <h3 class="text-xl font-semibold mb-1">10+</h3>
-                  <p class="text-gray-400 text-sm">Tech stack</p>
+                <div
+                  v-for="stat in stats"
+                  :key="stat.label"
+                  class="bg-moss-900/50 rounded-lg p-4 text-center"
+                >
+                  <h3 class="text-xl font-bold text-moss-400 mb-1">{{ stat.metric }}</h3>
+                  <p class="text-gray-400 text-sm">{{ stat.label }}</p>
                 </div>
               </div>
             </div>
