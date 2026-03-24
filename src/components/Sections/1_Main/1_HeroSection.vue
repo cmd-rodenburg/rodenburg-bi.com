@@ -22,11 +22,11 @@ const technologies = [
           Anne Rodenburg
         </h1>
         <p class="text-xl sm:text-2xl text-moss-500 font-medium mb-8">
-          Senior Data Engineer — Azure · Databricks · Snowflake
+          Senior Data Engineer &amp; BI Specialist — Azure · Databricks · Snowflake
         </p>
         <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-          I've cut pipeline ingestion times by 97%, reduced API processing by 85%, and delivered
-          production-ready data systems across 5 countries.
+          I build the data infrastructure that makes Business Intelligence trustworthy.
+          97% faster pipelines. 85% less ingestion overhead. Dashboards your team actually believes.
           Available for DACH-market engagements in Dutch, English, and German.
         </p>
         <div class="flex flex-wrap justify-center gap-4 mb-12">

@@ -12,59 +12,59 @@ import {
 } from 'lucide-vue-next'
 import type { Component } from 'vue'
 
-const services: Array<{ title: string; description: string; icon: Component }> = [
+const services: Array<{ title: string; engineering: string; outcome: string; icon: Component }> = [
   {
     title: 'Data Warehouse Architecture',
-    description:
-      'Scalable, structured architecture ensuring efficient storage, retrieval, and integration of data across enterprise systems.',
+    engineering: 'I design the warehouse architecture.',
+    outcome: 'Your analysts stop waiting for queries to finish.',
     icon: Database,
   },
   {
     title: 'Data Modeling',
-    description:
-      'Scalable models consolidating multi-source data for optimized storage, fast retrieval, and seamless analytical processing.',
+    engineering: 'I build the data models that power your reports.',
+    outcome: 'One version of the truth — no more spreadsheet debates.',
     icon: BarChart3,
   },
   {
     title: 'Intelligent Dashboards',
-    description:
-      'Automated dashboards eliminating manual reporting while delivering real-time insights into business-critical key performance indicators.',
+    engineering: 'I build the pipeline behind every dashboard.',
+    outcome: 'Your team gets answers the same day, not next week.',
     icon: LayoutDashboard,
   },
   {
     title: 'API Ingestions',
-    description:
-      'Seamless API integrations automating data ingestion, ensuring continuous, real-time updates with minimal manual intervention.',
+    engineering: 'I redesign API ingestion to run in parallel.',
+    outcome: 'Data arrives on time, every time — no manual chasing.',
     icon: Plug,
   },
   {
     title: 'Data Integration & ETL',
-    description:
-      'Optimized ETL workflows consolidating and transforming data for structured, efficient storage and analytics-ready datasets.',
+    engineering: 'I build the ETL pipelines that connect your sources.',
+    outcome: 'Marketing and finance finally agree on the numbers.',
     icon: GitMerge,
   },
   {
     title: 'Data Lake Implementation',
-    description:
-      'Scalable data lakes storing structured and unstructured data, enabling flexible, high-performance exploration and analytics.',
+    engineering: 'I implement scalable data lakes for all your data types.',
+    outcome: 'Analysts explore freely — without waiting on IT.',
     icon: Cloud,
   },
   {
-    title: 'Best Practices Implementation',
-    description:
-      'Industry-standard methodologies ensuring data integrity, security, governance, and compliance across all business processes.',
+    title: 'Best Practices & Governance',
+    engineering: 'I implement testing, CI/CD, and governance for your data platform.',
+    outcome: 'Your team trusts the data because someone is watching the pipes.',
     icon: CheckSquare,
   },
   {
     title: 'Data Quality Management',
-    description:
-      'Comprehensive frameworks monitoring, cleansing, and validating datasets to maintain accuracy, consistency, and reliability.',
+    engineering: 'I build monitoring and validation into every pipeline.',
+    outcome: 'When the numbers look wrong, you know within hours — not weeks.',
     icon: ShieldCheck,
   },
   {
     title: 'Data Security & Compliance',
-    description:
-      'Robust security measures ensuring regulatory compliance, data privacy, encryption, and protection from unauthorized access.',
+    engineering: 'I implement encryption, access controls, and audit trails.',
+    outcome: 'Your data is protected and auditable — without slowing your team down.',
     icon: Lock,
   },
 ]
@@ -80,9 +80,8 @@ const services: Array<{ title: string; description: string; icon: Component }> =
             <component :is="service.icon" class="w-12 h-12 text-moss-500" />
           </div>
           <h3 class="text-2xl font-semibold mb-3">{{ service.title }}</h3>
-          <p class="text-gray-300 mb-4">
-            {{ service.description }}
-          </p>
+          <p class="text-gray-300 mb-1">{{ service.engineering }}</p>
+          <p class="text-moss-500 text-sm">{{ service.outcome }}</p>
         </div>
       </div>
     </div>

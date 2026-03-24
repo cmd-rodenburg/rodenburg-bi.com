@@ -1,10 +1,42 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue'
+import { useIntersectionObserver } from '@vueuse/core'
+
 const stats = [
-  { metric: '97%', label: 'Pipeline time reduction' },
-  { metric: '85%', label: 'API ingestion time saved' },
-  { metric: '35%', label: 'Daily ingestion reduction' },
-  { metric: '1st / 268', label: 'iGEM international rank' },
+  { target: 97, prefix: '', suffix: '%', label: 'Pipeline time reduction' },
+  { target: 85, prefix: '', suffix: '%', label: 'API ingestion time saved' },
+  { target: 35, prefix: '', suffix: '%', label: 'Daily ingestion reduction' },
+  { target: 268, prefix: '1st / ', suffix: '', label: 'iGEM international rank' },
 ]
+
+const counts = ref(stats.map(() => 0))
+const hasAnimated = ref(false)
+const statsEl = ref<HTMLElement | null>(null)
+
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+function animateTo(index: number, target: number, duration = 1500) {
+  if (prefersReducedMotion) { counts.value[index] = target; return }
+  const start = performance.now()
+  function step(now: number) {
+    const progress = Math.min((now - start) / duration, 1)
+    const eased = 1 - Math.pow(1 - progress, 3)
+    counts.value[index] = Math.round(eased * target)
+    if (progress < 1) requestAnimationFrame(step)
+  }
+  requestAnimationFrame(step)
+}
+
+useIntersectionObserver(statsEl, ([entry]) => {
+  if (entry.isIntersecting && !hasAnimated.value) {
+    hasAnimated.value = true
+    stats.forEach((stat, i) => animateTo(i, stat.target))
+  }
+})
+
+const displayed = computed(() =>
+  stats.map((s, i) => `${s.prefix}${counts.value[i]}${s.suffix}`)
+)
 </script>
 
 <template>
@@ -43,13 +75,13 @@ const stats = [
                   class="rounded-full w-full aspect-square object-cover shadow-lg"
                 />
               </div>
-              <div class="w-full grid grid-cols-2 gap-4">
+              <div ref="statsEl" class="w-full grid grid-cols-2 gap-4">
                 <div
-                  v-for="stat in stats"
+                  v-for="(stat, i) in stats"
                   :key="stat.label"
                   class="bg-moss-900/50 rounded-lg p-4 text-center"
                 >
-                  <h3 class="text-xl font-bold text-moss-400 mb-1">{{ stat.metric }}</h3>
+                  <h3 class="text-xl font-bold text-moss-400 mb-1">{{ displayed[i] }}</h3>
                   <p class="text-gray-400 text-sm">{{ stat.label }}</p>
                 </div>
               </div>

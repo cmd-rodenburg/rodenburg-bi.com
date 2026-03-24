@@ -617,16 +617,28 @@ These are real, sourced from CV. Use exactly. Do not invent.
 
 ## Priority Order for Claude Code
 
+### ✅ Completed
+- **US-050** — Node.js 24 on Netlify (`netlify.toml` already set)
+- **US-002** — Decision Tree Diagnostic (`src/components/Diagnostic/`)
+- **US-001** — Ask Anne Showcase (`src/components/AskAnne/`)
 
-1. **US-002** — Decision Tree Diagnostic ← START HERE (this is the real showcase)
-1. **US-001** — Ask Anne Showcase (non-functional chat UI with redirect)
-2. **US-101** — Hero rewrite
-3. **US-102** — About metrics
-4. **US-103** — Project card metrics
-5. **US-104** — Science background
-6. **US-201** — Logo strip
-7. **US-301** — Animated count-up
-8. Everything else as time permits
+- **US-101** — Hero rewrite (subtitle + body copy)
+- **US-102** — About outcome metrics (97%, 85%, 35%, iGEM)
+- **US-103** — Project card metrics (all 6 projects)
+- **US-104** — Science background in About section
+
+- **US-201** — Client logo strip (styled text, between Hero and About)
+- **US-202** — Service cards rewritten with DE+BI two-line framing; icons already Lucide
+- **US-203** — DACH/language signal (already in hero from Phase 1)
+
+- **US-301** — Animated count-up on metrics (scroll-triggered, respects prefers-reduced-motion)
+- **US-302** — Technology filter chips on projects (Databricks, Snowflake, dbt, Azure, Python, BigQuery, Power BI)
+- **US-303** — Career timeline (`2b_TimelineSection.vue`) between About and Projects; expandable cards; TDM rehire highlighted
+
+- **US-401** — Portfolio metrics dashboard (`5b_DashboardSection.vue`) — 2 animated bar charts: tech coverage + performance improvements
+- **US-402** — Architecture diagram modal on TDM card — annotated pipeline flow with parallelisation + dynamic mapping explanations
+
+### All phases complete ✅
 
 ---
 
