@@ -253,6 +253,37 @@ src/components/Diagnostic/
 ```
 ---
 
+## Phase 0.5 — Infrastructure (Do Before Any Feature Work)
+
+**Goal:** Keep the Netlify build healthy and on a supported runtime. Node.js 18 is end-of-life — Netlify warns on every deploy and will eventually break.
+
+**Estimated effort:** 5 minutes
+
+---
+
+### US-050 — Upgrade Node.js to 24.x on Netlify
+
+> **As a** developer deploying to Netlify,
+> **I want** the build to run on a supported Node.js version,
+> **So that** deploys don't fail or produce warnings as Node 18 reaches end-of-life.
+
+**What to change:**
+
+`netlify.toml` — already updated:
+```toml
+[build.environment]
+  NODE_VERSION = "24"
+```
+
+**Acceptance criteria:**
+- [ ] `netlify.toml` specifies `NODE_VERSION = "24"`
+- [ ] Build completes without Node version warnings on Netlify dashboard
+- [ ] All existing functionality works on Node 24 (Vite + Vue 3 are fully compatible)
+
+**Note:** No `package.json` `engines` field update needed for a static site — `netlify.toml` is the authoritative source for the build runtime.
+
+---
+
 ## Phase 1 — Quick Copy Wins (High ROI, Low Effort)
 
 **Goal:** Fix the messaging. Replace generic copy with real proof points. 
