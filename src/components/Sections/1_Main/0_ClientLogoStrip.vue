@@ -24,9 +24,6 @@ const clients = [
           {{ client.full }}
         </span>
       </div>
-      <p class="text-center text-gray-500 text-sm mt-8">
-        TDM Systems brought Anne back by request to take their proof-of-concept to production.
-      </p>
     </div>
   </section>
 </template>

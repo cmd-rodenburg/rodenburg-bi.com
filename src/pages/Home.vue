@@ -8,6 +8,7 @@ import TimelineSection  from '../components/Sections/1_Main/2b_TimelineSection.v
 import FeaturedProjects from '../components/Sections/1_Main/3_FeaturedProjectsSection.vue'
 import Services         from '../components/Sections/1_Main/4_ServicesSection.vue'
 import DiagnosticSection from '../components/Diagnostic/DiagnosticSection.vue'
+import HowIWorkSection  from '../components/Sections/1_Main/4b_HowIWorkSection.vue';
 import SkillsSection    from '../components/Sections/1_Main/5_SkillsSection.vue';
 import DashboardSection from '../components/Sections/1_Main/5b_DashboardSection.vue';
 import Blog             from '../components/Sections/1_Main/6_BlogSection.vue';
@@ -27,6 +28,7 @@ import AskAnneWidget   from '../components/AskAnne/AskAnneWidget.vue';
       <FeaturedProjects />
       <Services />
       <DiagnosticSection />
+      <HowIWorkSection />
       <SkillsSection />
       <DashboardSection />
       <Blog/>

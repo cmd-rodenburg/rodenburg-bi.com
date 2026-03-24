@@ -25,9 +25,11 @@ const technologies = [
           Senior Data Engineer &amp; BI Specialist — Azure · Databricks · Snowflake
         </p>
         <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-          I build the data infrastructure that makes Business Intelligence trustworthy.
-          97% faster pipelines. 85% less ingestion overhead. Dashboards your team actually believes.
-          Available for DACH-market engagements in Dutch, English, and German.
+          Your pipelines ingest the wrong data. Your reports contradict each other.
+          Your team argues about numbers instead of acting on them. I've fixed this at
+          EON, Henkel, and TDM Systems — cutting ingestion times by up to 97%.<br class="hidden sm:block" /><br class="hidden sm:block" />
+          Available for DACH-market engagements from Q2 2026.
+          Dutch · English · German.
         </p>
         <div class="flex flex-wrap justify-center gap-4 mb-12">
           <router-link
@@ -37,10 +39,10 @@ const technologies = [
             Schedule a call
           </router-link>
           <a
-            href="#projects"
+            href="#diagnostic"
             class="border-2 border-moss-500 text-moss-500 font-semibold px-8 py-3 rounded-full hover:bg-moss-500/10 transition-colors"
           >
-            See my work
+            Diagnose my problem
           </a>
         </div>
         <div class="flex flex-wrap justify-center gap-3">
