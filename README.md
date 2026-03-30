@@ -55,10 +55,12 @@ src/
       2b_TimelineSection.vue
       3_FeaturedProjectsSection.vue
       4_ServicesSection.vue
+      4b_HowIWorkSection.vue
       5_SkillsSection.vue
       5b_DashboardSection.vue
       6_BlogSection.vue
       7_ContactSection.vue
+      ArchitectureDiagramModal.vue  ← shared modal (TDM, Solytic, EON)
   pages/
     Home.vue
     BookMeeting.vue
@@ -116,8 +118,11 @@ npm run build
 ### Ask Anne Widget
 `src/components/AskAnne/` — A polished floating chat UI that demonstrates AI implementation capability. Intentionally non-functional (redirects to email) — the honest explanation is part of the UX.
 
-### Architecture Diagram Modal
-`src/components/Sections/1_Main/3_FeaturedProjectsSection.vue` — TDM Systems project card includes an interactive architecture diagram showing the parallelisation and dynamic mapping decisions that achieved 97% pipeline time reduction.
+### Architecture Diagram Modals
+`src/components/Sections/1_Main/ArchitectureDiagramModal.vue` — Shared modal component used by three project cards (TDM, Solytic, EON). Each shows the pipeline architecture with annotated design decisions: parallelisation strategy, Snowflake Bronze/Silver/Gold layering, and enterprise migration with zero-downtime cutover.
+
+### How I Work Section
+`src/components/Sections/1_Main/4b_HowIWorkSection.vue` — Three-phase engagement model (Analysis → Discovery Day → Implementation). Placed immediately after the Diagnostic section. Each phase card has a CTA: email, `/meet-Anne`, or scroll to `#projects`.
 
 ### Animated Metrics
 `src/components/Sections/1_Main/2_AboutSection.vue` — Count-up animation on scroll using `@vueuse/core` `useIntersectionObserver`. Respects `prefers-reduced-motion`.
