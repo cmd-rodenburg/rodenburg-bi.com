@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { MessageSquare, CalendarCheck, Layers } from 'lucide-vue-next'
 import type { Component } from 'vue'
+import { ANNE_EMAIL } from '../../../config'
 
 const phases: Array<{
   number: string
@@ -19,7 +20,7 @@ const phases: Array<{
     body: "I won't quote a solution before I understand the problem. A brief conversation or written summary is enough to tell if I can help.",
     tag: 'Free · 30 minutes',
     ctaLabel: 'Tell me what\'s broken',
-    ctaHref: 'mailto:anne@rodenburg-bi.com',
+    ctaHref: `mailto:${ANNE_EMAIL}`,
     ctaExternal: true,
   },
   {

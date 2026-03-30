@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Mail, Calendar } from 'lucide-vue-next'
+import { ANNE_EMAIL } from '../../../config'
 </script>
 
 <template>
@@ -22,7 +23,7 @@ import { Mail, Calendar } from 'lucide-vue-next'
           Book a Discovery Day
         </router-link>
         <a
-          href="mailto:anne@rodenburg-bi.com"
+          :href="`mailto:${ANNE_EMAIL}`"
           class="inline-flex items-center justify-center gap-2 border-2 border-moss-500 text-moss-500 font-semibold px-8 py-3 rounded-full hover:bg-moss-500/10 transition-colors"
         >
           <Mail class="w-4 h-4" />
@@ -51,10 +52,10 @@ import { Mail, Calendar } from 'lucide-vue-next'
         </a>
         <span>·</span>
         <a
-          href="mailto:anne@rodenburg-bi.com"
+          :href="`mailto:${ANNE_EMAIL}`"
           class="hover:text-gray-300 transition-colors"
         >
-          anne@rodenburg-bi.com
+          {{ ANNE_EMAIL }}
         </a>
       </div>
     </div>

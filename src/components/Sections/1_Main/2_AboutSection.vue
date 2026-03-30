@@ -53,9 +53,9 @@ const displayed = computed(() =>
             <div class="space-y-6">
               <p class="text-justify text-gray-300 leading-relaxed">
                 I help organizations turn scattered, unreliable data into clear, decision-ready insight. As a senior data engineer and business intelligence specialist, I design data platforms that give teams control, speed, and confidence in their numbers.
-              </p>
+            </p>
               <p class="text-justify text-gray-300 leading-relaxed">
-                I've worked across five countries, from Logistics to energy to e-commerce, and the pattern repeats everywhere: good engineers and good analysts, operating in silos that nobody built a bridge between.
+                Through every domains I've worked in, from aviation, logistics to energy and e-commerce, the pattern repeats everywhere: good engineers and good analysts, operating in silos that nobody built a bridge between.
               </p>
               <p class="text-justify text-gray-300 leading-relaxed">
                 I build that bridge. The pipelines that feed the dashboards. The models that the dashboards trust. When a number looks wrong, I can trace it from the report back to the source system and tell you exactly where it broke.
