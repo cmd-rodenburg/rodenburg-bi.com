@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:rodenburg-bi.com)",
-      "Bash(node -e \"const d=require\\(''./package.json''\\); console.log\\(Object.keys\\(d.dependencies||{}\\).join\\('', ''\\)\\)\")"
-    ]
-  }
-}

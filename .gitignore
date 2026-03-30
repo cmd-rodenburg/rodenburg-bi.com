@@ -32,3 +32,5 @@ vite.config.d.ts
 *.sw?
 
 .env
+CONFIDENTIAL_BRIEF.md
+.claude/
