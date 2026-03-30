@@ -19,3 +19,10 @@
 .card {
   @apply bg-moss-900/50 rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg border border-moss-800/20;
 }
+
+.prose-links a {
+  @apply text-moss-500 underline;
+}
+.prose-links a:hover {
+  @apply text-moss-400;
+}
