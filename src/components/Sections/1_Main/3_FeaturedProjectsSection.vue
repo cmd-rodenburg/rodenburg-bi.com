@@ -57,6 +57,8 @@ const projects: Project[] = [
     metrics: 'Production Vue 3 site architected and shipped in a single session',
     description:
       'Used Claude Code to architect, build, and iterate on this portfolio site — validating AI-assisted development as a practical workflow for production delivery. Full component library, interactive diagnostic tool, animated data visualisations, and architecture diagrams — one developer, one AI assistant.',
+    subdescription:
+      'Curious to see how this site was built? Check the<a href="https://github.com/cmd-rodenburg/rodenburg-bi.com" target="_blank" class="text-moss-500 hover:underline"> GitHub repo here</a>.',
     technologies: ['Vue 3', 'TypeScript', 'Tailwind CSS', 'Claude Code', 'Netlify'],
   },
 ]
