@@ -84,7 +84,7 @@ const filtered = computed(() =>
       <!-- TDM rehire pullquote (US-504) -->
       <blockquote class="border-l-4 border-moss-500 pl-6 mb-12 max-w-3xl mx-auto">
         <p class="text-xl text-gray-200 italic leading-relaxed">
-          "TDM Systems brought Anne back by request — from proof-of-concept to full production.
+          "TDM Systems brought Anne back by request. 
           That's the engagement that matters: not just delivering, but being trusted to own what you built."
         </p>
         <footer class="text-gray-500 text-sm mt-3">TDM Systems · Netherlands · 2025–2026</footer>

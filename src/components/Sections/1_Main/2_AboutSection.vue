@@ -55,13 +55,13 @@ const displayed = computed(() =>
                 I help organizations turn scattered, unreliable data into clear, decision-ready insight. As a senior data engineer and business intelligence specialist, I design data platforms that give teams control, speed, and confidence in their numbers.
               </p>
               <p class="text-justify text-gray-300 leading-relaxed">
-                Most data problems aren't data problems. They're trust problems — engineers who built something the business doesn't understand, or analysts who never got what they asked for. I've worked across five countries, from FMCG to energy to e-commerce, and the pattern repeats everywhere: good engineers and good analysts, operating in silos that nobody built a bridge between.
+                I've worked across five countries, from Logistics to energy to e-commerce, and the pattern repeats everywhere: good engineers and good analysts, operating in silos that nobody built a bridge between.
               </p>
               <p class="text-justify text-gray-300 leading-relaxed">
                 I build that bridge. The pipelines that feed the dashboards. The models that the dashboards trust. When a number looks wrong, I can trace it from the report back to the source system and tell you exactly where it broke.
               </p>
               <p class="text-justify text-gray-300 leading-relaxed">
-                My background is in molecular medicine — where bad data costs lives. I won first place in an international synthetic biology competition (iGEM, 1st of 268 teams). That standard of rigor carries into every pipeline and model I build.
+                With a background is in molecular medicine, the science never lies. Data works the same. We do not invent what doesn't exist, therefore we must rely on what already exists. I won first place in an international synthetic biology competition (iGEM, 1st of 268 teams). That standard of rigor carries into every pipeline and model I build.
               </p>
             </div>
           </div>

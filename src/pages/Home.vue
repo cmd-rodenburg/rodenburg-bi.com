@@ -2,7 +2,7 @@
 import NavigationBar    from '../components/Layout/NavigationBar.vue';
 import Header           from '../components/Layout/Header.vue'
 import HeroSection      from '../components/Sections/1_Main/1_HeroSection.vue';
-import ClientLogoStrip  from '../components/Sections/1_Main/0_ClientLogoStrip.vue';
+// import ClientLogoStrip  from '../components/Sections/1_Main/0_ClientLogoStrip.vue';
 import AboutSection     from '../components/Sections/1_Main/2_AboutSection.vue';
 import TimelineSection  from '../components/Sections/1_Main/2b_TimelineSection.vue';
 import FeaturedProjects from '../components/Sections/1_Main/3_FeaturedProjectsSection.vue'
@@ -22,15 +22,15 @@ import AskAnneWidget   from '../components/AskAnne/AskAnneWidget.vue';
     <Header imageSrc="/images/Background_contact.jpg" />
     <main class="main-content">
       <HeroSection />
-      <ClientLogoStrip />
+      <!-- <ClientLogoStrip /> -->
       <AboutSection />
-      <TimelineSection />
+      <!-- <TimelineSection /> -->
       <FeaturedProjects />
       <Services />
       <DiagnosticSection />
       <HowIWorkSection />
       <SkillsSection />
-      <DashboardSection />
+      <!-- <DashboardSection /> -->
       <Blog/>
       <ContactSection />
     </main>
