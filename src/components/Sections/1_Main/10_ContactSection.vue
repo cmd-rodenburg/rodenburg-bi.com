@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ContactForm from '../../forms/ContactForm.vue';
 import { Mail, Calendar } from 'lucide-vue-next'
 import { ANNE_EMAIL } from '../../../config'
 </script>
@@ -9,9 +10,7 @@ import { ANNE_EMAIL } from '../../../config'
       <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6">Tell me what's broken.</h2>
 
       <p class="text-lg text-gray-300 leading-relaxed mb-10 max-w-xl mx-auto">
-        I don't do discovery calls by default — I do them when it's worth both our time.
         Use the <a href="#diagnostic" class="text-moss-500 hover:underline">diagnostic above</a> to describe your situation, then reach out.
-        If it sounds like a fit, I'll suggest a next step.
       </p>
 
       <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
@@ -29,6 +28,12 @@ import { ANNE_EMAIL } from '../../../config'
           <Mail class="w-4 h-4" />
           Email first
         </a>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="bg-white text-gray-900 dark:bg-gray-800 dark:text-white p-8 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold mb-4">Fill here directly your business case</h3>
+        <ContactForm />
       </div>
 
       <!-- Social links -->

@@ -11,7 +11,7 @@ const technologies = [
 </script>
 
 <template>
-  <section class="relative min-h-screen flex items-center justify-center bg-moss-950 overflow-hidden">
+  <section id = "hero" class="relative min-h-screen flex items-center justify-center bg-moss-950 overflow-hidden">
     <!-- Logo background watermark -->
     <div class="absolute -right-20 top-20 -translate-y-1/2 w-[480px] h-[480px] sm:w-[600px] sm:h-[600px] opacity-20 pointer-events-none select-none">
       <img src="/images/RodenburgBI-logo.jpg" alt="" class="w-full h-full rounded-full object-contain" aria-hidden="true" />
