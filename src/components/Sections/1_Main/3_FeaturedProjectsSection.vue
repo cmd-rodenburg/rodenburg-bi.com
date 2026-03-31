@@ -60,7 +60,6 @@ const projects: Project[] = [
 
 const filterChips = ['All', 'Databricks', 'Snowflake', 'dbt', 'Azure', 'Python', 'BigQuery', 'Power BI', 'AI']
 const activeFilter = ref('All')
-const activeModal = ref<'tdm' | 'solytic' | 'eon' | null>(null)
 
 const filtered = computed(() =>
   activeFilter.value === 'All'

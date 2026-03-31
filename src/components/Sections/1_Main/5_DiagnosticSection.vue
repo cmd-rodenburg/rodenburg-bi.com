@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import DiagnosticTree from './DiagnosticTree.vue'
+import DiagnosticTree from '../../Diagnostic/DiagnosticTree.vue'
 </script>
 
 <template>
